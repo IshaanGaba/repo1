@@ -1,0 +1,154 @@
+/* Global Styles */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f4f7fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+  transition: background 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Custom Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes cardHover {
+  0% { transform: scale(1); box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+  50% { transform: scale(1.02); box-shadow: 0 10px 15px rgba(0,0,0,0.15); }
+  100% { transform: scale(1); box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+}
+
+/* Component Specific Styles */
+.student-card {
+  animation: fadeIn 0.5s ease-out;
+  transition: all 0.3s ease;
+}
+
+.student-card:hover {
+  animation: cardHover 1.5s infinite;
+}
+
+/* Gradient Backgrounds */
+.gradient-background {
+  background: linear-gradient(
+    135deg, 
+    rgba(59, 130, 246, 0.1) 0%, 
+    rgba(99, 102, 241, 0.1) 100%
+  );
+}
+
+/* Responsive Typography */
+@media (max-width: 640px) {
+  .student-name {
+    font-size: 1.5rem;
+  }
+}
+
+/* Enhanced Avatar Styles */
+.student-avatar {
+  transition: all 0.3s ease;
+  border: 3px solid rgba(59, 130, 246, 0.2);
+}
+
+.student-avatar:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Detailed Information Blocks */
+.info-block {
+  background: linear-gradient(
+    to right, 
+    rgba(255,255,255,0.8), 
+    rgba(240,249,255,0.5)
+  );
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+}
+
+.info-block:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+}
+
+/* Button Styles */
+.custom-button {
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.custom-button:hover {
+  background-color: #2563eb;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0,0,0,0.15);
+}
+
+/* Footer Specific Styles */
+.footer-link {
+  color: #4b5563;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.footer-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #3b82f6;
+  transition: width 0.3s ease;
+}
+
+.footer-link:hover::after {
+  width: 100%;
+}
+
+/* Print Styles */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  
+  .print-section, .print-section * {
+    visibility: visible;
+  }
+  
+  .print-section {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}

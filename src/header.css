@@ -1,0 +1,38 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .logo {
+    height: 50px;
+    width: 50px;
+  }
+  
+  .user-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .user-email {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .logout-button {
+    padding: 5px 10px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .logout-button:hover {
+    background-color: #0056b3;
+  }
+  

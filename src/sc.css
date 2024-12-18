@@ -1,0 +1,17 @@
+.analysis-button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: 20px;
+  }
+  
+  .analysis-button:hover {
+    background-color: #0056b3;
+  }
+  

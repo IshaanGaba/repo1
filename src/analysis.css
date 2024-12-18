@@ -1,0 +1,91 @@
+.dashboard-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .dashboard-title {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Panel Styling */
+  .summary-panel, .chart-panel, .table-panel {
+    margin-bottom: 20px;
+  }
+  
+  .chart-panel {
+    text-align: center;
+  }
+  
+  .stat-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+  }
+  
+  /* Card Styling */
+  .p-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .p-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #555;
+  }
+  
+  .p-card p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #222;
+  }
+  
+  /* Chart Styling */
+  .chart-container {
+    margin: 20px auto;
+    max-width: 800px;
+  }
+  
+  /* Table Styling */
+  .table-panel {
+    padding: 15px;
+  }
+  
+  .p-datatable {
+    margin-top: 15px;
+    font-size: 14px;
+  }
+  
+  .p-datatable .p-datatable-thead > tr > th {
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  .p-datatable .p-datatable-tbody > tr > td {
+    color: #555;
+  }
+  
+  /* Button Styling */
+  .p-button {
+    margin-top: 15px;
+  }
+  
+  .p-button-icon-left {
+    margin-right: 5px;
+  }
+  
+  /* Divider */
+  .p-divider {
+    margin: 25px 0;
+    border-top: 1px solid #ddd;
+  }
+  
